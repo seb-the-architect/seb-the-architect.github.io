@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+    font-family: Montserrat, sans-serif;
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* Hero Section */
+
+#hero{
+    background-image: url(images/newrig.jpg);
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-size:cover;
+}
+
+#hero h1{
+    display:block;
+    width: 0%;
+    font-size: 2.5rem;
+    position:relative;
+    color: white;
+    padding-bottom: 10px;
+    animation: text_reveal_line .5s ease forwards;
+    animation-delay: 1.5s;
+    overflow:hidden;
+}
+
+#hero .cta{
+    display: inline-block;
+    padding: 10px 15px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    font-size: 140%;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    transition: .3s ease background-color;
+}
+#hero .cta:hover{
+    background-color:rgba(213, 205, 203, 0.2);
+}
+
+/* End Hero Section */
+
+/* Skills Section */
+
+.skills-container{
+    padding: 50px;
+    min-height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+}
+
+.video-slideshow-container{
+    position: relative;
+    margin-top: 50px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    max-width: 806px;
+    max-height: 25px;
+}
+
+#skills{
+    background-color: #1b1a1b;
+}
+
+.skills-container h1{
+    font-size: 2.5rem;
+    color:white;
+    
+    text-align: center;
+}
+
+/* SLIDE THING */
+
+.arrows-container{
+    position: absolute;
+}
+
+
+
+/* END SLIDE THING*/
+.slide{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    max-height: 454px;
+}
+
+.slide iframe{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
+
+.video-and-info-container{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.video-info{
+    position: relative;
+    display:flex;
+    padding-left:20px;
+    justify-content:left;
+    align-items: center;
+}
+
+.video-text-wrapper{
+    font-size: 3em;
+}
+
+#video-button-wrapper{
+    position:relative;
+    top:15px;
+}
+
+#video-button-wrapper .button{
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+    border: 2px solid white;
+    margin-right:20px;
+    font-size: 50%;
+    padding:5px;
+}
+
+.first-info{
+    color:white;
+    opacity: 100%;
+    white-space: pre;
+    min-width: 720px;
+    height: 148px;
+    
+}
+
+.bio-container{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.bio-image-container img{
+    width: 45vw;
+    margin-top: 45px;
+}
+
+.bio-text-title{
+    margin-top: 45px;
+    font-size: 4rem;
+    color:white
+}
+
+.bio-text-info{
+    margin-top: 30px;
+    font-size: 2rem;
+    color:white;
+}
+
+.bio-socials{
+    margin-top: 75px;
+}
+
+.bio-socials img{
+    height: 100px;
+    width: 100px;
+}
+
+.gmail-text{
+    margin-top: 20px;
+    font-size: 2rem;
+    color:white;
+}
+
+/* SLIDE THING */
+
+/* Skills Section */
+
+/* Keyframes */
+
+@keyframes text_reveal_line{
+    0%{
+        width:0%;
+        border-right: 2px solid transparent;
+    }
+    50%{
+        border-right: 2px solid white;
+    }
+    100%{
+        width:100%;
+        border-right: 2px solid transparent;
+    }
+}
+/* End Keyframes */
